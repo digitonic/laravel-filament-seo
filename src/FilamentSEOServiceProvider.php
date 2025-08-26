@@ -1,6 +1,6 @@
 <?php
 
-namespace RalphJSmit\Filament\SEO;
+namespace Digitonic\Filament\SEO;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

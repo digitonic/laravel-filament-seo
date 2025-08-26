@@ -1,9 +1,10 @@
 <?php
 
-namespace RalphJSmit\Filament\SEO\Tests;
+namespace Digitonic\Filament\SEO\Tests;
 
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
+use Filament\Schemas\SchemasServiceProvider;
 use Filament\Support\SupportServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Application;
@@ -11,7 +12,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\View;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use RalphJSmit\Filament\SEO\FilamentSEOServiceProvider;
+use Digitonic\Filament\SEO\FilamentSEOServiceProvider;
 use RalphJSmit\Laravel\SEO\LaravelSEOServiceProvider;
 
 class TestCase extends Orchestra
@@ -22,7 +23,7 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(fn (string $modelName) => 'RalphJSmit\\Filament\\SEO\\Database\\Factories\\' . class_basename($modelName) . 'Factory');
+        Factory::guessFactoryNamesUsing(fn (string $modelName) => 'Digitonic\\Filament\\SEO\\Database\\Factories\\' . class_basename($modelName) . 'Factory');
 
         View::addLocation(__DIR__ . '/Fixtures/resources/views');
 
@@ -42,6 +43,7 @@ class TestCase extends Orchestra
             FormsServiceProvider::class,
             LaravelSEOServiceProvider::class,
             FilamentSEOServiceProvider::class,
+            SchemasServiceProvider::class,
             SupportServiceProvider::class,
         ];
     }

@@ -1,23 +1,29 @@
 {
-  "name": "ralphjsmit/laravel-filament-seo",
+  "name": "digitonic/laravel-filament-seo",
   "description": "A package to combine the power of Laravel SEO and Filament Admin.",
   "keywords": [
     "ralphjsmit",
+    "digitonic",
     "laravel",
     "laravel-filament-seo"
   ],
-  "homepage": "https://github.com/ralphjsmit/laravel-filament-seo",
+  "homepage": "https://github.com/digitonic/laravel-filament-seo",
   "license": "MIT",
   "authors": [
     {
       "name": "Ralph J. Smit",
       "email": "rjs@ralphjsmit.com",
       "role": "Developer"
+    },
+    {
+      "name": "Sean O'Donnell",
+      "email": "sean@digitonic.co.uk",
+      "role": "Developer"
     }
   ],
   "require": {
-    "php": "^8.0",
-    "filament/filament": "^3.0",
+    "php": "^8.2",
+    "filament/filament": "^4.0",
     "illuminate/contracts": "^10.0|^11.0|^12.0",
     "ralphjsmit/laravel-seo": "^1.7",
     "spatie/laravel-package-tools": "^1.9.2"
@@ -26,7 +32,7 @@
     "doctrine/dbal": "^3.8",
     "nesbot/carbon": "^2.66|^3.0",
     "nunomaduro/collision": "^7.0|^8.0|^9.0",
-    "orchestra/testbench": "^8.0|^9.0|^10.0",
+    "orchestra/testbench": "^9.0|^10.0",
     "pestphp/pest": "^2.0|^3.0",
     "pestphp/pest-plugin-laravel": "^2.0|^3.0",
     "phpunit/phpunit": "^10.5|^11.5",
@@ -34,16 +40,13 @@
   },
   "autoload": {
     "psr-4": {
-      "RalphJSmit\\Filament\\SEO\\": "src"
+      "Digitonic\\Filament\\SEO\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "RalphJSmit\\Filament\\SEO\\Tests\\": "tests"
-    },
-    "files": [
-      "src/Support/helpers.php"
-    ]
+      "Digitonic\\Filament\\SEO\\Tests\\": "tests"
+    }
   },
   "scripts": {
     "test": "vendor/bin/pest",
@@ -58,7 +61,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "RalphJSmit\\Filament\\SEO\\FilamentSEOServiceProvider"
+        "Digitonic\\Filament\\SEO\\FilamentSEOServiceProvider"
       ],
       "aliases": {}
     }
