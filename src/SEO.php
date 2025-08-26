@@ -54,7 +54,7 @@ class SEO
             ], $only)
         )
             ->afterStateHydrated(function (Group $component, ?Model $record) use ($only): void {
-                $component->getChildComponentContainer()->fill(
+                $component->getChildSchema()->fill(
                     $record?->seo?->only($only) ?: []
                 );
             })
