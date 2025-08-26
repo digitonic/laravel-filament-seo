@@ -1,17 +1,23 @@
 {
-  "name": "ralphjsmit/laravel-filament-seo",
+  "name": "digitonic/laravel-filament-seo",
   "description": "A package to combine the power of Laravel SEO and Filament Admin.",
   "keywords": [
     "ralphjsmit",
+    "digitonic",
     "laravel",
     "laravel-filament-seo"
   ],
-  "homepage": "https://github.com/ralphjsmit/laravel-filament-seo",
+  "homepage": "https://github.com/digitonic/laravel-filament-seo",
   "license": "MIT",
   "authors": [
     {
       "name": "Ralph J. Smit",
       "email": "rjs@ralphjsmit.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Sean O'Donnell",
+      "email": "sean@digitonic.co.uk",
       "role": "Developer"
     }
   ],
@@ -34,12 +40,12 @@
   },
   "autoload": {
     "psr-4": {
-      "RalphJSmit\\Filament\\SEO\\": "src"
+      "Digitonic\\Filament\\SEO\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "RalphJSmit\\Filament\\SEO\\Tests\\": "tests"
+      "Digitonic\\Filament\\SEO\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -55,7 +61,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "RalphJSmit\\Filament\\SEO\\FilamentSEOServiceProvider"
+        "Digitonic\\Filament\\SEO\\FilamentSEOServiceProvider"
       ],
       "aliases": {}
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace RalphJSmit\Filament\SEO;
+namespace Digitonic\Filament\SEO;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;

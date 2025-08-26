@@ -1,6 +1,6 @@
 <?php
 
-namespace RalphJSmit\Filament\SEO\Tests;
+namespace Digitonic\Filament\SEO\Tests;
 
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\View;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use RalphJSmit\Filament\SEO\FilamentSEOServiceProvider;
+use Digitonic\Filament\SEO\FilamentSEOServiceProvider;
 use RalphJSmit\Laravel\SEO\LaravelSEOServiceProvider;
 
 class TestCase extends Orchestra

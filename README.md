@@ -8,7 +8,7 @@ It provides a simple component that returns a Filament fieldgroup to modify the 
 
 ```php
 use Filament\Resources\Form;
-use RalphJSmit\Filament\SEO\SEO;
+use Digitonic\Filament\SEO\SEO;
 
 public static function form(Form $form): Form
 {
@@ -28,7 +28,7 @@ Here's an example of how the `SEO` component looks like:
 First, install the packages:
 
 ```shell
-composer require ralphjsmit/laravel-filament-seo
+composer require digitonic/laravel-filament-seo
 ```
 
 This will the require the `ralphjsmit/laravel-seo` as well if you didn't have that installed. Be sure to [check out the documentation of the main package](https://github.com/ralphjsmit/laravel-seo) and configure the values in the special `seo.php` config file!
@@ -61,7 +61,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
-use RalphJSmit\Filament\SEO\SEO;
+use Digitonic\Filament\SEO\SEO;
 
 class PostResource extends Resource
 {

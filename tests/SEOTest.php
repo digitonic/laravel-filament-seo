@@ -1,8 +1,8 @@
 <?php
 
-use RalphJSmit\Filament\SEO\Tests\Fixtures\Http\Livewire\CreatePost;
-use RalphJSmit\Filament\SEO\Tests\Fixtures\Http\Livewire\EditPost;
-use RalphJSmit\Filament\SEO\Tests\Fixtures\Models\Post;
+use Digitonic\Filament\SEO\Tests\Fixtures\Http\Livewire\CreatePost;
+use Digitonic\Filament\SEO\Tests\Fixtures\Http\Livewire\EditPost;
+use Digitonic\Filament\SEO\Tests\Fixtures\Models\Post;
 use RalphJSmit\Laravel\SEO\Models\SEO;
 
 use function Pest\Laravel\assertDatabaseCount;
