@@ -4,6 +4,7 @@ namespace Digitonic\Filament\SEO\Tests;
 
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
+use Filament\Schemas\SchemasServiceProvider;
 use Filament\Support\SupportServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Application;
@@ -22,7 +23,7 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(fn (string $modelName) => 'RalphJSmit\\Filament\\SEO\\Database\\Factories\\' . class_basename($modelName) . 'Factory');
+        Factory::guessFactoryNamesUsing(fn (string $modelName) => 'Digitonic\\Filament\\SEO\\Database\\Factories\\' . class_basename($modelName) . 'Factory');
 
         View::addLocation(__DIR__ . '/Fixtures/resources/views');
 
@@ -42,6 +43,7 @@ class TestCase extends Orchestra
             FormsServiceProvider::class,
             LaravelSEOServiceProvider::class,
             FilamentSEOServiceProvider::class,
+            SchemasServiceProvider::class,
             SupportServiceProvider::class,
         ];
     }
